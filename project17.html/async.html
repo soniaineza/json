@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASYNC AWAIT</title>
+</head>
+<body>
+    <u><h4>ASYNC</h4></u>
+    <H3 id="p1"></H3>
+    <script>
+        async function divide(a, b) {
+            if (b === 0) {
+                throw new Error("Cannot divide by zero");
+            }
+            let response = await a / b;
+            display(response);
+        }
+        function display(some) {
+            document.getElementById("p1").innerHTML = some;
+        }
+        divide(100 , 7);
+    </script>
+</body>
+</html>
+
