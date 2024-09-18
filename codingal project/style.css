@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+.hero-image, .section-image {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#map-legend {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.legend-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.sustainability { background-color: #27ae60; }
+.transportation { background-color: #3498db; }
+.technology { background-color: #e74c3c; }
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Energy Calculator Styles */
+#energy-calculator {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="number"],
+input[type="range"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="range"] {
+    padding: 0;
+}
+
+button[type="submit"] {
+    background-color: #2c3e50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #34495e;
+}
+
+#results {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
